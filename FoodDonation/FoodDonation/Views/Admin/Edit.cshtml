@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>OrderEdit</h2>
+
+<h1>Add Receiver</h1>
+
+<form action="" method="POST">
+
+    <input type="hidden" name="id" value="@Model.id" placeholder="id" class="form-control" />
+    
+    <input type="hidden" name="Name" value="@Model.Name" placeholder="Name" class="form-control" />
+    
+    <input type="hidden" name="ExpireDate" value="@Model.ExpireDate" placeholder="ExpireDate" class="form-control" />
+    <label>State :</label>
+    <input type="text" name="State" value="@Model.State" placeholder="State" class="form-control" />
+    
+    <input type="hidden" name="Resturant" value="@Model.Resturant" placeholder="Resturant" class="form-control" />
+    
+    <input type="hidden" name="Location" value="@Model.Location" placeholder="Location" class="form-control" />
+    <label>Receiver:</label>
+    <input type="text" name="Receiver" value="@Model.Receiver" placeholder="Receiver" class="form-control" />
+
+    <input type="submit" value="Create" class="btn btn-primary" />
+</form>
